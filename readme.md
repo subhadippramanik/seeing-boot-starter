@@ -1,13 +1,30 @@
 This is a starter project for Spring Boot using maven.
 
-The Dockerfile is 
+Getting started:
 
 ```
-FROM openjdk:8-jre-alpine
-
-COPY /target/spring-boot-starter-0.0.1-SNAPSHOT.jar /spring-boot-starter.jar
-
-EXPOSE 8080
-
-CMD ["java", "-jar", "spring-boot-starter.jar"]
+mvn clean install
 ```
+
+then
+
+```
+mvn spring-boot:run
+```
+
+This will launch the application. Now check `http://localhost:8080`. The greeting page should appear.
+
+This also has docker image. To pull..
+
+```
+docker pull subhadippramanik/spring-boot-starter
+```
+
+and run...
+
+```
+docker run subhadippramanik/spring-boot-starter
+```
+
+Image size `98.5MB`
+
