@@ -1,4 +1,4 @@
-This is just a starter project for Soring Boot using maven.
+This is a starter project for Spring Boot using maven.
 
 The Dockerfile is 
 
